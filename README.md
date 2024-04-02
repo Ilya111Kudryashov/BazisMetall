@@ -3,7 +3,7 @@
 
 [link to page](https://ilya111kudryashov.github.io/BazisMetall/)
 
-![image](![image](https://github.com/Ilya111Kudryashov/BazisMetall/assets/44931669/7f7fad22-2d21-4ffc-b4de-f4d15696476d)
+![image](https://github.com/Ilya111Kudryashov/BazisMetall/assets/44931669/7f7fad22-2d21-4ffc-b4de-f4d15696476d)
 )
 
 1)сделал верстку в соответствии с макетом(+ старался соблюдать РР) и реализовал адаптацию основных брейкпоинтов вплоть до 320рх
