@@ -265,7 +265,11 @@
                 </h2>
                 <div class="products__inner">
                     <div class="products__card">
-                        <img src="./images/products/1.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/1.avif" type="image/avif">
+                            <source srcset="./images/products/opti/1.webp" type="image/webp">
+                            <img src="./images/products/1.jpg" alt="">
+                        </picture>
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 КЛАДОЧНАЯ СЕТКА
@@ -312,7 +316,11 @@
                         </a>
                     </div>
                     <div class="products__card">
-                        <img src="./images/products/2.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/2.avif" type="image/avif">
+                            <source srcset="./images/products/opti/2.webp" type="image/webp">
+                            <img src="./images/products/2.jpg" alt="">
+                        </picture>
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 ДОРОЖНАЯ СЕТКА
@@ -350,7 +358,12 @@
                         </a>
                     </div>
                     <div class="products__card">
-                        <img src="./images/products/3.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/3.avif" type="image/avif">
+                            <source srcset="./images/products/opti/3.webp" type="image/webp">
+                            <img src="./images/products/3.jpg" alt="">
+                        </picture>
+                        <!-- <img src="./images/products/2.jpg" alt=""> -->
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 СЕТКА ДЛЯ ПРОИЗВОДСТВА
@@ -386,7 +399,12 @@
                         </a>
                     </div>
                     <div class="products__card">
-                        <img src="./images/products/4.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/4.avif" type="image/avif">
+                            <source srcset="./images/products/opti/4.webp" type="image/webp">
+                            <img src="./images/products/4.jpg" alt="">
+                        </picture>
+                        <!-- <img src="./images/products/2.jpg" alt=""> -->
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 АРМАТУРНАЯ СЕТКА
@@ -421,7 +439,12 @@
                         </a>
                     </div>
                     <div class="products__card">
-                        <img src="./images/products/5.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/5.avif" type="image/avif">
+                            <source srcset="./images/products/opti/5.webp" type="image/webp">
+                            <img src="./images/products/5.jpg" alt="">
+                        </picture>
+                        <!-- <img src="./images/products/5.jpg" alt=""> -->
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 РУЛОННАЯ СЕТКА
@@ -459,7 +482,12 @@
                         </a>
                     </div>
                     <div class="products__card">
-                        <img src="./images/products/6.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/products/opti/6.avif" type="image/avif">
+                            <source srcset="./images/products/opti/6.webp" type="image/webp">
+                            <img src="./images/products/6.jpg" alt="">
+                        </picture>
+                        <!-- <img src="./images/products/6.jpg" alt=""> -->
                         <div class="products__card-top">
                             <h3 class="products__card-title">
                                 МЕТАЛЛОПРОКАТ
@@ -491,13 +519,12 @@
                                 href="tel:89033888525">8 (903) 388-85-25</a>
                         </div>
                     </div>
-                    <form class="discont__form" action="#!" id="form" name="form" method="post">
-                        <input class="discont__input" type="text" id="name" name="name" placeholder="Ваше имя">
-                        <input class="discont__input" type="text" id="phone" name="phone" placeholder="Телефон">
-                        <textarea class="discont__input discont__textarea" name="message" id="message"
-                            placeholder="Потребность"></textarea>
+                    <form class="discont__form" action="#!" id="discontForm" name="discontForm" method="post">
+                        <input class="discont__input" type="text" id="name" name="name" placeholder="Ваше имя" data-reg="^[А-ЯЁ][а-яё]*$">
+                        <input class="discont__input" type="text" id="phone" name="phone" placeholder="Телефон" data-reg="^((\+7|7|8)+([0-9]){10})$">
+                        <textarea required class="discont__input discont__textarea" name="message" id="message" placeholder="Потребность"></textarea>
                         <div class="discont__button">
-                            <input type="button" id="button" name="button" value="Получить предложение">
+                            <input type="submit" id="discontButton" name="discontButton" value="Получить предложение">
                             <p class="discont__form-approve">
                                 Нажимая кнопку «Получить предложение», вы соглашаетесь
                                 с условиями <a href="#!">политики обработки персональных данных</a>
@@ -510,7 +537,12 @@
         <section class="promo">
             <div class="container">
                 <div class="promo__wrapper">
-                    <img src="./images/promo.jpg" alt="">
+                    <picture>
+                        <source srcset="./images/opti/promo.avif" type="image/avif">
+                        <source srcset="./images/opti/promo.webp" type="image/webp">
+                        <img src="./images/promo.jpg" alt="">
+                    </picture>
+                    <!-- <img src="./images/achievement1.jpg" alt=""> -->
                     <div class="promo__descr">
                         <h2 class="promo__title section-title">
                             СОБСТВЕННОЕ ПРОИЗВОДСТВО СВАРНОЙ СЕТКИ
@@ -531,25 +563,60 @@
                 </h2>
                 <ul class="clients__list">
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client1.png" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client1.avif" type="image/avif">
+                            <source srcset="./images/opti/client1.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client1.png" alt="">
+                        </picture>
+                        <!-- <img src="./images/products/6.jpg" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client2.png" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client2.avif" type="image/avif">
+                            <source srcset="./images/opti/client2.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client2.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client2.png" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client3.png" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client3.avif" type="image/avif">
+                            <source srcset="./images/opti/client3.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client3.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client3.png" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client4.png" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client4.avif" type="image/avif">
+                            <source srcset="./images/opti/client4.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client4.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client4.png" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client5.png" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client5.avif" type="image/avif">
+                            <source srcset="./images/opti/client5.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client5.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client5.png" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client6.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client6.avif" type="image/avif">
+                            <source srcset="./images/opti/client6.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client6.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client6.jpg" alt=""> -->
                     </li>
                     <li class="clients__item">
-                        <img class="clients__item-img" src="./images/client7.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/opti/client7.avif" type="image/avif">
+                            <source srcset="./images/opti/client7.webp" type="image/webp">
+                            <img class="clients__item-img" src="./images/client7.png" alt="">
+                        </picture>
+                        <!-- <img class="clients__item-img" src="./images/client7.jpg" alt=""> -->
                     </li>
                 </ul>
             </div>
@@ -568,7 +635,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="achievements__item">
-                                        <img src="./images/achievement1.jpg" alt="">
+                                        <picture>
+                                            <source srcset="./images/opti/achievement1.avif" type="image/avif">
+                                            <source srcset="./images/opti/achievement1.webp" type="image/webp">
+                                            <img src="./images/achievement1.jpg" alt="">
+                                        </picture>
+                                        <!-- <img src="./images/achievement1.jpg" alt=""> -->
                                         <p class="achievements__text">
                                             Описание
                                         </p>
@@ -576,7 +648,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="achievements__item">
-                                        <img src="./images/achievement2.jpg" alt="">
+                                        <picture>
+                                            <source srcset="./images/opti/achievement2.avif" type="image/avif">
+                                            <source srcset="./images/opti/achievement2.webp" type="image/webp">
+                                            <img src="./images/achievement2.jpg" alt="">
+                                        </picture>
+                                        <!-- <img src="./images/achievement1.jpg" alt=""> -->
                                         <p class="achievements__text">
                                             Описание
                                         </p>
@@ -584,7 +661,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="achievements__item">
-                                        <img src="./images/achievement3.jpg" alt="">
+                                        <picture>
+                                            <source srcset="./images/opti/achievement3.avif" type="image/avif">
+                                            <source srcset="./images/opti/achievement3.webp" type="image/webp">
+                                            <img src="./images/achievement3.jpg" alt="">
+                                        </picture>
+                                        <!-- <img src="./images/achievement1.jpg" alt=""> -->
                                         <p class="achievements__text">
                                             Описание
                                         </p>
@@ -592,7 +674,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="achievements__item">
-                                        <img src="./images/achievement4.jpg" alt="">
+                                        <picture>
+                                            <source srcset="./images/opti/achievement4.avif" type="image/avif">
+                                            <source srcset="./images/opti/achievement4.webp" type="image/webp">
+                                            <img src="./images/achievement4.jpg" alt="">
+                                        </picture>
+                                        <!-- <img src="./images/achievement1.jpg" alt=""> -->
                                         <p class="achievements__text">
                                             Описание
                                         </p>
@@ -600,7 +687,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="achievements__item">
-                                        <img src="./images/achievement1.jpg" alt="">
+                                        <picture>
+                                            <source srcset="./images/opti/achievement1.avif" type="image/avif">
+                                            <source srcset="./images/opti/achievement1.webp" type="image/webp">
+                                            <img src="./images/achievement1.jpg" alt="">
+                                        </picture>
+                                        <!-- <img src="./images/svarmesh.jpg" alt=""> -->
                                         <p class="achievements__text">
                                             Описание
                                         </p>
@@ -632,7 +724,12 @@
             <div class="container">
 
                 <div class="manufacturer__content">
-                    <img src="./images/svarmesh.jpg" alt="">
+                    <picture>
+                        <source srcset="./images/opti/svarmesh.avif" type="image/avif">
+                        <source srcset="./images/opti/svarmesh.webp" type="image/webp">
+                        <img src="./images/svarmesh.jpg" alt="">
+                    </picture>
+                    <!-- <img class="clients__item-img" src="./images/client7.png" alt=""> -->
                     <div class="manufacturer__content-descr">
                         <h3 class="manufacturer__content-title">
                             Производитель сварной сетки
@@ -838,16 +935,16 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="contacts__form" action="#!">
+                    <form class="contacts__form" action="#!" id="contactsForm" name="contactsForm">
                         <p class="contacts__form-text">
                             Наш специалист проконсультирует вас по стоимости, срокам поставки и сделает максимально
                             выгодное предложение под Ваш бюджет.
                         </p>
                         <div class="contacts__form-inner">
 
-                            <input class="contacts__form-input" type="text" placeholder="Ваше имя">
-                            <input class="contacts__form-input" type="text" placeholder="Телефон">
-                            <input class="contacts__form-btn" name="" id="" type="button" value="Получить предложение">
+                            <input class="contacts__form-input" type="text" placeholder="Ваше имя" id="name" name="name" data-reg="^[А-ЯЁ][а-яё]*$">
+                            <input class="contacts__form-input" type="text" placeholder="Телефон" id="phone" name="phone" data-reg="^((\+7|7|8)+([0-9]){10})$">
+                            <input class="contacts__form-btn" name="contactsButton" id="contactsButton" type="submit" value="Получить предложение">
                         </div>
                     </form>
                 </div>
